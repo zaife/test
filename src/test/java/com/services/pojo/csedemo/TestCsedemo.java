@@ -3,14 +3,14 @@ package com.services.pojo.csedemo;
 import com.services.pojo.csedemo.model.Person;
 
 
-import static org.junit.Assert.*;  
-  
-import org.junit.After;  
-import org.junit.AfterClass;  
-import org.junit.Before;  
-import org.junit.BeforeClass;  
-import org.junit.Ignore;  
-import org.junit.Test;  
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Ignore;
+import org.junit.Test;
 
 public class TestCsedemo {
 
@@ -27,7 +27,7 @@ public class TestCsedemo {
 
         assertEquals(expactReturnValue, returnValue);
     }
-    
+
 
     @Test
     public void testsayHei(){
@@ -39,7 +39,7 @@ public class TestCsedemo {
 
         assertEquals(expactReturnValue, returnValue);
     }
-    
+
 
     @Test
     public void testsayHello(){
@@ -51,19 +51,19 @@ public class TestCsedemo {
 
         assertEquals(expactReturnValue, returnValue);
     }
-    
+
 
     @Test
     public void testsayHi(){
 
-        String expactReturnValue = null; // You should put the expect String type value here.
+      String expactReturnValue = "hi, Tom! welcome to ServiceStage"; // You should put the expect String type value here.
 
-        // You should put the parameter here, in such footprint: csedemoImpl.sayHi(String name)
-        String returnValue = csedemoImpl.sayHi(null);
+      // You should put the parameter here, in such footprint: csedemoImpl.sayHi(String name)
+      String returnValue = csedemoImpl.sayHi("Tom");
 
-        assertEquals(expactReturnValue, returnValue);
+      assertEquals(expactReturnValue, returnValue);
     }
-    
+
 
     @Test
     public void testsaySomething(){
@@ -75,9 +75,5 @@ public class TestCsedemo {
 
         assertEquals(expactReturnValue, returnValue);
     }
-    
+
 }
-
-
-
-
